@@ -340,12 +340,7 @@
                 pane: 'pane_habitados_reinodeferro_4',
                 shape: 'triangle',
                 radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1,
+                stroke: false,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(241,0,16,1.0)',
@@ -562,6 +557,7 @@
         function style_combates_7_0() {
             return {
                 pane: 'pane_combates_7',
+                shape: 'triangle',
                 radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -682,7 +678,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['Nome'] !== null?String('<div style="color: #ffffff; font-size: 6pt; font-family: \'MS UI Gothic\', sans-serif;">' + layer.feature.properties['Nome']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_combates_7'});
+            layer.bindTooltip((layer.feature.properties['Nome'] !== null?String('<div style="color: #ffffff; font-size: 8pt; font-family: \'Lucida Sans Unicode\', sans-serif;">' + layer.feature.properties['Nome']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_combates_7'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
