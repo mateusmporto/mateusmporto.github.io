@@ -135,12 +135,7 @@
                 pane: 'pane_habitados_irmandandeazul_1',
                 shape: 'triangle',
                 radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
+                stroke: false,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(166,206,227,1.0)',
@@ -213,12 +208,7 @@
                 pane: 'pane_habitados_elfosdafloresta_2',
                 shape: 'triangle',
                 radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
+                stroke: false,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(164,235,0,1.0)',
@@ -355,7 +345,7 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 2.0,
+                weight: 1,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(241,0,16,1.0)',
@@ -428,12 +418,7 @@
                 pane: 'pane_habitados_reinodasluas_5',
                 shape: 'triangle',
                 radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
+                stroke: false,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,225,1,1.0)',
@@ -506,12 +491,7 @@
                 pane: 'pane_habitados_ligados8_6',
                 shape: 'triangle',
                 radius: 4.0,
-                opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
+                stroke: false,
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(72,123,255,1.0)',
@@ -558,7 +538,7 @@
                         <td colspan="2">' + (feature.properties['Popula'] !== null ? autolinker.link(feature.properties['Popula'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Historia'] !== null ? autolinker.link(feature.properties['Historia'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Historia</strong><br />' + (feature.properties['Historia'] !== null ? autolinker.link(feature.properties['Historia'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Raca'] !== null ? autolinker.link(feature.properties['Raca'].toLocaleString()) : '') + '</td>\
@@ -582,7 +562,7 @@
         function style_combates_7_0() {
             return {
                 pane: 'pane_combates_7',
-                radius: 6.0,
+                radius: 4.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
